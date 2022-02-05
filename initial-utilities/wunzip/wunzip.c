@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
   FILE *fp;
 
   for (int i = 1; i < argc; i++) {
-    fp = fopen(argv[1], "r");
+    fp = fopen(argv[i], "r");
 
     if (fp == NULL) {
       printf("wunzip: cannot open file\n");
