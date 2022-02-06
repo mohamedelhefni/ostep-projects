@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
       printf("%s", line);
     }
   }
+  fclose(fp);
   return 0;
 }
 

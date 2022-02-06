@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
     while ((ch = fgetc(fp)) != EOF) {
       fputc(ch, all);
     }
+    fclose(fp);
   }
 
   rewind(all);
@@ -54,5 +55,7 @@ int main(int argc, char *argv[]) {
 
   fwrite(&count, sizeof(int), 1, stdout);
   fwrite(&ch, sizeof(char), 1, stdout);
+
+  fclose(all);
 
 }
